@@ -1,12 +1,13 @@
 #!/usr/bin/env ruby 
 
-require_relative '../lib/garden.rb'
-require_relative '../lib/plant.rb'
+#require_relative '../lib/garden.rb'
+#require_relative '../lib/plant.rb'
+require_relative '../config/environment.rb'
 
 lawn = Garden.new(name: 'Front Lawn')
 
 basil = Plant.new(name: 'Basil')
-basil.garden = lawn
+basil.garden = lawn #plant belongs to a garden / a garden has many plants 
 
 cucumber = Plant.new(name: 'Cucumber')
 cucumber.garden = lawn
